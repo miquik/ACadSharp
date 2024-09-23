@@ -1019,7 +1019,15 @@ namespace ACadSharp.IO
 				case ACadVersion.AC1027:
 				case ACadVersion.AC1032:
 					//Check if it works...
-					sectionStream = this.getSectionBuffer18(this._fileHeader as DwgFileHeaderAC18, sectionName);
+					sectionStream = this.getSectionBuffer18(this._fileHeader as DwgFileHeaderAC18, sectionName);					
+					/*
+					using (FileStream sss = new FileStream("d:/Codes/GitHub/rs-manuali/rs-dwg/sectionStream.dat", FileMode.Create, FileAccess.Write))
+					{
+						sectionStream.Position = 0;
+						sectionStream.CopyTo(sss);
+					}
+					sectionStream.Position = 0;
+					*/
 					break;
 				default:
 					break;
