@@ -10,7 +10,7 @@ namespace ACadSharp.Examples
 {
 	class Program
 	{
-		const string _file = "D:\\Codes\\GitHub\\rs-manuali\\rs-dwg\\data\\test1.dwg";
+		const string _file = "D:\\Codes\\GitHub\\rs-manuali\\rs-dwg\\data\\test1_2.dwg";
 
 		static void Main(string[] args)
 		{		
