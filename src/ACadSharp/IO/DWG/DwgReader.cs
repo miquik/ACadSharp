@@ -608,13 +608,13 @@ namespace ACadSharp.IO
 			//0x00	4	Number of section descriptions(NumDescriptions)
 			int ndescriptions = decompressedStream.ReadInt<LittleEndianConverter>();
 			//0x04	4	0x02 (long)
-			decompressedStream.ReadInt<LittleEndianConverter>();
+			int a1 = decompressedStream.ReadInt<LittleEndianConverter>();
 			//0x08	4	0x00007400 (long)
-			decompressedStream.ReadInt<LittleEndianConverter>();
+			int a2 = decompressedStream.ReadInt<LittleEndianConverter>();
 			//0x0C	4	0x00 (long)
-			decompressedStream.ReadInt<LittleEndianConverter>();
+			int a3 = decompressedStream.ReadInt<LittleEndianConverter>();
 			//0x10	4	Unknown (long), ODA writes NumDescriptions here.
-			decompressedStream.ReadInt<LittleEndianConverter>();
+			int a4 = decompressedStream.ReadInt<LittleEndianConverter>();
 
 			for (int i = 0; i < ndescriptions; ++i)
 			{

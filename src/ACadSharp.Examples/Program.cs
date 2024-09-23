@@ -4,15 +4,16 @@ using ACadSharp.Tables.Collections;
 using System;
 using System.Diagnostics;
 using System.Linq;
+using ACadSharp;
 
 namespace ACadSharp.Examples
 {
 	class Program
 	{
-		const string _file = "../../../../../samples/sample_AC1032.dwg";
+		const string _file = "D:\\Codes\\GitHub\\rs-manuali\\rs-dwg\\data\\test1.dwg";
 
 		static void Main(string[] args)
-		{
+		{		
 			CadDocument doc;
 			using (DwgReader reader = new DwgReader(_file))
 			{

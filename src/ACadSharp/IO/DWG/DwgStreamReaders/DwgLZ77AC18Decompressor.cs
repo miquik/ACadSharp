@@ -21,9 +21,11 @@ namespace ACadSharp.IO.DWG
 			//Decompress the stream
 			DecompressToDest(compressed, memoryStream);
 			memoryStream.Position = 0L;
+			// File.WriteAllBytes("d:/Codes/GitHub/rs-manuali/rs-dwg/csharp.dat", memoryStream.ToArray());
+			// memoryStream.Position = 0L;
 
 			return memoryStream;
-		}
+		}		
 
 		/// <summary>
 		/// Decompress a compressed source stream.
