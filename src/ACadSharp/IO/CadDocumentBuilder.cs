@@ -206,6 +206,9 @@ namespace ACadSharp.IO
 				{
 					value = (T)template;
 					return true;
+				} else
+				{
+					int debug = -1;
 				}
 			}
 

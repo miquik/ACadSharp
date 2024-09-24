@@ -129,7 +129,7 @@ namespace ACadSharp.IO.DWG
 			while (this._handles.Any())
 			{
 				ulong handle = this._handles.Dequeue();
-				if (handle == 3386)
+				if (handle == 3470)
 				{
 					int y = 0;
 				}
