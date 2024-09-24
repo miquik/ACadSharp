@@ -118,6 +118,9 @@ namespace ACadSharp.IO
 				{
 					value = (T)obj;
 					return true;
+				} else
+				{
+					int debug = -1;
 				}
 			}
 
