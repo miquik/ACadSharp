@@ -129,6 +129,10 @@ namespace ACadSharp.IO.DWG
 			while (this._handles.Any())
 			{
 				ulong handle = this._handles.Dequeue();
+				if (handle == 3386)
+				{
+					int y = 0;
+				}
 
 				//Check if the handle has already been read
 				if (!this._map.TryGetValue(handle, out long offset) ||
