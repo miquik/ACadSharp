@@ -151,8 +151,8 @@ namespace ACadSharp.IO.DWG
 
 				try
 				{
-					//Read the object
-					if (type == ObjectType.INSERT && handle == 3288) {
+					//Read the object	// LEADER 3287
+					if (type == ObjectType.LEADER && handle == 3287) {
 						int j = 0;
 
 				}
