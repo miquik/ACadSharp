@@ -67,6 +67,10 @@ namespace ACadSharp.IO
 
 			foreach (CadTemplate template in this.cadObjectsTemplates.Values)
 			{
+				if (template.CadObject.Handle ==3191)
+				{
+					int y = 0;
+				}
 				template.Build(this);
 			}
 		}
