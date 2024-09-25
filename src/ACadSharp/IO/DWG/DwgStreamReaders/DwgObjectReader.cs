@@ -152,6 +152,10 @@ namespace ACadSharp.IO.DWG
 				try
 				{
 					//Read the object
+					if (type == ObjectType.INSERT && handle == 3288) {
+						int j = 0;
+
+				}
 					template = this.readObject(type);
 				}
 				catch (Exception ex)

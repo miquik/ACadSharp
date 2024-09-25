@@ -12,10 +12,15 @@ namespace ACadSharp.Examples
 	{
 		const string _file = "D:\\Codes\\GitHub\\rs-manuali\\rs-dwg\\data\\test1_2.dwg";
 
+		static void notify(object sender, NotificationEventArgs e)
+		{
+			Console.WriteLine(e.Message);
+		}
+
 		static void Main(string[] args)
 		{		
 			CadDocument doc;
-			using (DwgReader reader = new DwgReader(_file))
+			using (DwgReader reader = new DwgReader(_file, notify))
 			{
 				doc = reader.Read();
 			}
