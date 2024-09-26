@@ -56,6 +56,12 @@ namespace ACadSharp.Examples
 			exploreTable(doc.UCSs);
 			exploreTable(doc.Views);
 			exploreTable(doc.VPorts);
+
+			Console.WriteLine("ModelSpace");
+			foreach (var e in doc.Entities.GroupBy(i => i.GetType().FullName))
+			{
+				Console.WriteLine($"\t\t{e.Key}: {e.Count()}");
+			}
 		}
 
 		static void exploreTable<T>(Table<T> table)
